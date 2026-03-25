@@ -1,0 +1,102 @@
+body {
+margin: 40px;
+background: #ffffff;
+margin: 20px;
+}
+.box {
+margin-top: 20px;
+width: 100px;
+height: 100px;
+background: #3498db;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: sans-serif;
+font-size: 1rem;
+border-radius: 8px;
+cursor: pointer;
+transition-property: background-color;
+}
+.box.duration {
+transition-duration: 2s;
+}
+.box.timing {
+transition-duration: 1s;
+transition-timing-function: linear;
+}
+.box.delay {
+©2025 Codefinity. All Terms Reserved.transition-duration: 1s;
+transition-delay: 1s;
+}
+.box:hover {
+background: #e67e22;
+}
+input,
+button {
+border: 2px solid #aaa;
+background: #fff;
+padding: 0.5em 1em;
+transition: border-color 0.3s, background 0.3s;
+font-size: 1em;
+outline: none;
+margin: 0.5em;
+}
+input:hover,
+input:focus {
+border-color: #4285f4;
+background: #e3f0fd;
+}
+button:hover,
+button:focus {
+border-color: #0f9d58;
+background: #e6f9ed;
+cursor: pointer;
+}
+.card {
+width: 300px;
+padding: 2rem;
+background: rgba(156, 123, 255, 0.5);
+border-radius: 1rem;
+box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+/* Initial state: no transform */
+transform: none;
+}
+.card:hover {
+/* On hover, scale up and rotate */
+transform: scale(1.18) rotate(4deg);
+}
+.square {
+width: 80px;
+height: 80px;
+background: #3498db;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: sans-serif;
+font-size: 1rem;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.09);
+margin-bottom: 8px;
+}
+.translate:hover {
+transform: translate(40px, 20px) rotate(30deg);
+}
+.scale:hover {
+transform: scale(1.5, 0.7);
+}
+.rotate:hover {
+transform: rotate(30deg);
+}
+.skew:hover {
+transform: skew(20deg, 10deg);
+}
+table, td,th{
+    border: 1px solid #4285f4;
+}
+fieldset{
+    max-width: 400px;
+    margin: 30px;
+}
